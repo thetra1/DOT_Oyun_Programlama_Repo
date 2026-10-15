@@ -1,19 +1,34 @@
 ﻿using System;
 
-class Operations {
+class NumberChecker
+{
+    private int _number;
 
-	public bool EvenControl(int numberToCheck){
+    // Getter / Setter
+    public int Number
+    {
+        get 
+        { 
+            return _number; 
+        }
+        set 
+        { 
+            _number = value; 
+        }
+    }
 
-		return numberToCheck % 2 == 0;
-	}
-
+    public bool IsEven()
+    {
+        return _number % 2 == 0;
+    }
 } 
 
-class UI {
-
-	static void Main(){
-
-        Operations operation = new Operations();
+class UI 
+{
+    static void Main()
+    {
+        // Nesnemizi (object) oluşturuyoruz
+        NumberChecker checker = new NumberChecker();
 
         string? input;
         do
@@ -23,7 +38,11 @@ class UI {
 
             if (int.TryParse(input, out int intInput))
             {
-                if (operation.EvenControl(intInput))
+                // Değeri Setter aracılığıyla nesnemize atıyoruz
+                checker.Number = intInput;
+
+                // Nesnemiz kendi içindeki değişkeni kullanarak sonucu döndürüyor
+                if (checker.IsEven())
                 {
                     Console.WriteLine("Söylediğiniz sayı çift.\n");
                 }
