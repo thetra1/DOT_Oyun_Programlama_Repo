@@ -1,0 +1,62 @@
+# Unity'nin geçici ve yerel dosyaları
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Unity 6 IL2CPP / CMake / Ninja build cache
+/.utmp/
+.utmp/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Hafıza yakalamaları
+/[Mm]emoryCaptures/
+
+# Asset meta verileri (sadece asset'in kendisi yok sayılmışsa yok sayılmalı)
+!/[Aa]ssets/**/*.meta
+
+# IDE ve Cache dosyaları
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D tarafından oluşturulan meta dosyaları
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Çökme raporları ve Build'ler
+sysinfo.txt
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Signing keys — ASLA commit etme
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+keystore.properties
